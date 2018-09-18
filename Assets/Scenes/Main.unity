@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 225834020}
   m_Layer: 0
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 262505548}
   m_Layer: 0
   m_Name: Up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -324,8 +324,8 @@ GameObject:
   - component: {fileID: 345173595}
   - component: {fileID: 345173594}
   m_Layer: 0
-  m_Name: Up (1)
-  m_TagString: Untagged
+  m_Name: Down
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -496,9 +496,9 @@ GameObject:
   - component: {fileID: 611877343}
   - component: {fileID: 611877342}
   - component: {fileID: 611877345}
-  - component: {fileID: 611877346}
-  - component: {fileID: 611877347}
   - component: {fileID: 611877344}
+  - component: {fileID: 611877347}
+  - component: {fileID: 611877346}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -610,6 +610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae552de1bdfdb64eb7461200fc4c005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WallBounceEffectObj: {fileID: 1110307551796174, guid: c240b3f7c9b917c4db1140b44aa83eef,
+    type: 2}
 --- !u!96 &611877347
 TrailRenderer:
   serializedVersion: 2
@@ -676,9 +678,9 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 0.69411767}
       key1: {r: 1, g: 1, b: 1, a: 0.41960785}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0.41960785}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -694,7 +696,7 @@ TrailRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 0
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0
@@ -710,48 +712,6 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
---- !u!1001 &679666066
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4562012590771600, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4562012590771600, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4562012590771600, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4562012590771600, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4562012590771600, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4562012590771600, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4562012590771600, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4562012590771600, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c240b3f7c9b917c4db1140b44aa83eef, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2081402283
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,7 +724,7 @@ GameObject:
   - component: {fileID: 2081402286}
   m_Layer: 0
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
