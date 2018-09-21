@@ -771,6 +771,9 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> parent of 054d05a... added autospawn of obstacles
+=======
 >>>>>>> parent of 054d05a... added autospawn of obstacles
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bb0185261c9e734ebee6897e952daa7, type: 2}

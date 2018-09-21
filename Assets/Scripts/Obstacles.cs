@@ -18,8 +18,11 @@ public class Obstacles : MonoBehaviour {
         {
             int randomY = Random.Range(-6, 7); 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             //randomly selected numbers from the range will instantiate an obstacle there
+=======
+>>>>>>> parent of 054d05a... added autospawn of obstacles
 =======
 >>>>>>> parent of 054d05a... added autospawn of obstacles
             GameObject tempObj = Instantiate(triangleObj, new Vector2(transform.position.x, randomY), Quaternion.identity);
