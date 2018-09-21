@@ -726,29 +726,6 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
---- !u!1 &1023927647 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1786574036789276, guid: 7bb0185261c9e734ebee6897e952daa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1058635617}
---- !u!95 &1023927649
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1023927647}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 43a08b7a50701944895ed63470ef24b6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1058635617
 Prefab:
   m_ObjectHideFlags: 0
@@ -788,21 +765,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1786574036789276, guid: 7bb0185261c9e734ebee6897e952daa7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1720583487178002, guid: 7bb0185261c9e734ebee6897e952daa7, type: 2}
-      propertyPath: m_TagString
-      value: Triangle
-      objectReference: {fileID: 0}
-    - target: {fileID: 95522665338308274, guid: 7bb0185261c9e734ebee6897e952daa7,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 95522665338308274, guid: 7bb0185261c9e734ebee6897e952daa7, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bb0185261c9e734ebee6897e952daa7, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2081402283

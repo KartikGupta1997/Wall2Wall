@@ -21,8 +21,10 @@ public class Obstacles : MonoBehaviour {
         for (int i=0; i<12; i++)
         {
             int randomY = Random.Range(-6, 7); 
+
             //randomly selected numbers from the range will instantiate an obstacle there
             GameObject tempObj = Instantiate(triangleObj, new Vector2(transform.position.x, randomY), Quaternion.identity);
+            
             //all the instantiated gameobjects will become the child of the wall, using the line of code below
             tempObj.transform.SetParent(transform);
         }
